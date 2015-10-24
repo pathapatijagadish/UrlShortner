@@ -1,0 +1,5 @@
+<div class="jumbotron">
+  <h4><b>Your shorter url for <%= @url.long_url %> is :</b> 
+  <%= link_to @url.short_url, @url.short_url, target: "_blank" %><br><br></h4>
+  <%= link_to "Create another Url", root_path,:class => "btn btn-info" %>
+</div>

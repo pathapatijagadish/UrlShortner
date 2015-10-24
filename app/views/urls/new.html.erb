@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h3>Convert Long Url into Short URL </h3><br>
+<%= form_for "", url: urls_path, method: :post do |f| %>
+  <div class="form-group">
+    <%= f.label "Enter Your Url" %> :&nbsp&nbsp
+    <%= f.text_field :url, :size => 70 %>
+  </div>
+  <%= f.submit "Create Shorter Url", :class => "btn btn-info" %>
+<% end %>
+</div>
+
